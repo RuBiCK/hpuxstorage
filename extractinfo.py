@@ -3,9 +3,8 @@ import paramiko, base64
 import re
 import string
 
-keypriv ='/root/ruben/id_rsa_144'
-#hosts = [ 'sv284' ]
-hosts = [ 'sv282', 'vh006', 'vh057', 'sv144' ]
+keypriv ='id_rsa'
+hosts = open('hostlist.cfg','r').readlines()
 vgsdatadict={}
 
 
@@ -18,7 +17,9 @@ def showvginfo(host):
 			modellist.append(vgsdatadict[host]['vgs'][N]['pvs'][k]['model'])
 
 		modelos=dict((x,modellist.count(x)) for x in set(modellist))
-		modelosstring = ''
+		m=''
+		t=''
+		modelosstring=''
 		for m,t in modelos.items():
 			modelosstring = modelosstring + ' ' + str(t) + ' x ' + m
 		modelosstring = modelosstring.replace('\n','')
@@ -31,6 +32,8 @@ def extractvgsize(host):
 		print 'Tamaño ' + str(N) + ' ' + str(int(vgsdatadict[host]['vgs'][N]['pe_size']) * int(vgsdatadict[host]['vgs'][N]['total_pe'])/1024) + 'Gb'
 
 for host in hosts:
+	#remove \n for ssh connection
+	host=host.rstrip('\n')
 	print '\n' +host
 	vgsdatadict[host]={'vgs':{}}
 
@@ -56,6 +59,10 @@ for host in hosts:
 			vgsdatadict[host]['vgs'][vg_name]['pvs'][pv_name]={}
 			del linedict['pv_name']
 			vgsdatadict[host]['vgs'][vg_name]['pvs'][pv_name].update(linedict)
+		elif 'pvg_name' in linedict:
+			vg_name=''
+			lv_name=''
+			pv_name=''
 
 	#Obtener modelo e introducirlo en el dict una vez procesadas las entradas de vgdisplay
 	for N in vgsdatadict[host]['vgs'].keys():
