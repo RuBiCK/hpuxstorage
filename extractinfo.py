@@ -54,15 +54,11 @@ for host in hosts:
 			vgsdatadict[host]['vgs'][vg_name]['lvs'][lv_name]={}
 			del linedict['lv_name']
 			vgsdatadict[host]['vgs'][vg_name]['lvs'][lv_name].update(linedict)
-		elif 'pv_name' in linedict:
+		elif 'pv_name' in linedict and not 'pvg_name' in linedict:
 			pv_name=linedict['pv_name']
 			vgsdatadict[host]['vgs'][vg_name]['pvs'][pv_name]={}
 			del linedict['pv_name']
 			vgsdatadict[host]['vgs'][vg_name]['pvs'][pv_name].update(linedict)
-		elif 'pvg_name' in linedict:
-			vg_name=''
-			lv_name=''
-			pv_name=''
 
 	#Obtener modelo e introducirlo en el dict una vez procesadas las entradas de vgdisplay
 	for N in vgsdatadict[host]['vgs'].keys():
