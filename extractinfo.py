@@ -2,6 +2,7 @@
 import paramiko, base64
 import re
 import string
+from tabulate import tabulate
 
 keypriv ='id_rsa'
 hosts = open('hostlist.cfg','r').readlines()
@@ -10,9 +11,12 @@ vgsdatadict={}
 
 def showvginfo(host):
 	modellist=[]
+	outputlist=[]
+	headers=['Server','VG name','Size Gb','Free Gb','Disks count types']
 	for N in vgsdatadict[host]['vgs'].keys():
 		vg=N
 		size=int(vgsdatadict[host]['vgs'][N]['pe_size']) * int(vgsdatadict[host]['vgs'][N]['total_pe'])/1024
+		freevg=int(vgsdatadict[host]['vgs'][N]['pe_size']) * int(vgsdatadict[host]['vgs'][N]['free_pe'])/1024
 		for k,v in vgsdatadict[host]['vgs'][N]['pvs'].items():
 			modellist.append(vgsdatadict[host]['vgs'][N]['pvs'][k]['model'])
 
@@ -23,10 +27,12 @@ def showvginfo(host):
 		for m,t in modelos.items():
 			modelosstring = modelosstring + ' ' + str(t) + ' x ' + m
 		modelosstring = modelosstring.replace('\n','')
-		print vg + '\t' + str(size) + ' Gb\t' + modelosstring
+		listline=[host,vg,str(size),str(freevg),modelosstring]
+		outputlist.append(listline)
 		modellist=[]
 		modelos.clear()
-
+	print tabulate(outputlist,headers,tablefmt="psql")
+	print '\n'
 def extractvgsize(host):
 	 for N in vgsdatadict[host]['vgs'].keys():
 		print 'Tamaño ' + str(N) + ' ' + str(int(vgsdatadict[host]['vgs'][N]['pe_size']) * int(vgsdatadict[host]['vgs'][N]['total_pe'])/1024) + 'Gb'
@@ -34,7 +40,7 @@ def extractvgsize(host):
 for host in hosts:
 	#remove \n for ssh connection
 	host=host.rstrip('\n')
-	print '\n' +host
+	#print '\n' +host
 	vgsdatadict[host]={'vgs':{}}
 
 	ssh = paramiko.SSHClient()
