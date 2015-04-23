@@ -1,0 +1,1185 @@
+/usr/lib64/python2.6/site-packages/pycrypto-2.6.1-py2.6-linux-x86_64.egg/Crypto/Util/randpool.py:40: RandomPool_DeprecationWarning: This application uses RandomPool, which is BROKEN in older releases.  See http://www.pycrypto.org/randpool-broken
+  RandomPool_DeprecationWarning)
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| etr3db01.logista.local | /dev/vg03 |      3678 |         0 | 48 x  OPEN-V        |
+| etr3db01.logista.local | /dev/vg02 |       187 |         0 | 12 x  OPEN-V        |
+| etr3db01.logista.local | /dev/vg01 |         9 |         0 | 1 x  OPEN-V         |
+| etr3db01.logista.local | /dev/vg00 |       169 |        11 | 1 x  OPEN-V         |
+| etr3db01.logista.local | /dev/vg07 |        59 |         0 | 4 x  OPEN-V         |
+| etr3db01.logista.local | /dev/vg06 |        39 |         0 | 4 x  OPEN-V         |
+| etr3db01.logista.local | /dev/vg05 |        27 |         3 | 4 x  OPEN-V         |
+| etr3db01.logista.local | /dev/vg04 |        27 |         3 | 4 x  OPEN-V         |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-------------+-----------+-----------+---------------------+
+| Server                 | VG name     |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-------------+-----------+-----------+---------------------|
+| etr3mn01.logista.local | /dev/vgtemp |        49 |         0 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg03   |        99 |         2 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg02   |        59 |         0 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg01   |         9 |         0 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg00   |        82 |         9 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg06   |       200 |         1 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg05   |        50 |         1 | 1 x  Virtual Disk   |
+| etr3mn01.logista.local | /dev/vg04   |        50 |         1 | 1 x  Virtual Disk   |
++------------------------+-------------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| etr3sv01.logista.local | /dev/vg14 |      1064 |         4 | 1 x  Virtual Disk   |
+| etr3sv01.logista.local | /dev/vg15 |        14 |         0 | 1 x  Virtual Disk   |
+| etr3sv01.logista.local | /dev/vg01 |        19 |         3 | 1 x  Virtual Disk   |
+| etr3sv01.logista.local | /dev/vg00 |        70 |         9 | 1 x  Virtual Disk   |
+| etr3sv01.logista.local | /dev/vg12 |        64 |        20 | 1 x  Virtual Disk   |
+| etr3sv01.logista.local | /dev/vg13 |         3 |         0 | 1 x  Virtual Disk   |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| lipodb01.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| lipodb01.logista.local | /dev/vg00 |       118 |         9 | 1 x  HSV400         |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| lipofl01.logista.local | /dev/vg11 |         3 |         0 | 2 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg08 |         7 |         0 | 4 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg12 |        14 |         0 | 1 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg03 |        59 |        40 | 4 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| lipofl01.logista.local | /dev/vg00 |       117 |         8 | 1 x  HSV400         |
+| lipofl01.logista.local | /dev/vg10 |         3 |         0 | 2 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg06 |        59 |        14 | 4 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg05 |        15 |         0 | 1 x  OPEN-V         |
+| lipofl01.logista.local | /dev/vg04 |         4 |         0 | 1 x  OPEN-V         |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| liport01.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| liport01.logista.local | /dev/vg00 |       118 |         9 | 1 x  HSV400         |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| liport02.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| liport02.logista.local | /dev/vg00 |       117 |         8 | 1 x  HSV400         |
+| liport02.logista.local | /dev/vg13 |        24 |         0 | 1 x  OPEN-V         |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| liposv01.logista.local | /dev/vg03 |        59 |         4 | 1 x                 |
+| liposv01.logista.local | /dev/vg02 |        34 |         0 | 1 x  Virtual Disk   |
+| liposv01.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| liposv01.logista.local | /dev/vg00 |        70 |         9 | 2 x  Virtual Disk   |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++------------------------+-----------+-----------+-----------+---------------------+
+| Server                 | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|------------------------+-----------+-----------+-----------+---------------------|
+| lipots01.logista.local | /dev/vg10 |         3 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg11 |         3 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg09 |       120 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg08 |        14 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg03 |        19 |         1 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg00 |       118 |         9 | 2 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg07 |         9 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg06 |        49 |         4 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg05 |        15 |         0 | 1 x  Virtual Disk   |
+| lipots01.logista.local | /dev/vg04 |         4 |         0 | 1 x  Virtual Disk   |
++------------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+---------------+-----------+-----------+---------------------+
+| Server              | VG name       |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+---------------+-----------+-----------+---------------------|
+| sv120.logista.local | /dev/vgoracle |         4 |         0 | 1 x  OPEN-V         |
+| sv120.logista.local | /dev/vg03     |       679 |         4 | 28 x  OPEN-V        |
+| sv120.logista.local | /dev/vg01     |         9 |         0 | 1 x  HSV400         |
+| sv120.logista.local | /dev/vg00     |        61 |         8 | 1 x  HSV400         |
+| sv120.logista.local | /dev/vg06     |        19 |         0 | 4 x  OPEN-V         |
+| sv120.logista.local | /dev/vg05     |         0 |         0 | 1 x  OPEN-V         |
+| sv120.logista.local | /dev/vg04     |         0 |         0 | 1 x  OPEN-V         |
++---------------------+---------------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv129.logista.local | /dev/vg01 |        18 |         0 | 3 x  Virtual Disk   |
+| sv129.logista.local | /dev/vg00 |        44 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1319.logista.local | /dev/vg03 |       136 |         4 | 1 x  LOGICAL VOLUME |
+| sv1319.logista.local | /dev/vg02 |       136 |        42 | 1 x  LOGICAL VOLUME |
+| sv1319.logista.local | /dev/vg01 |       136 |        31 | 1 x  LOGICAL VOLUME |
+| sv1319.logista.local | /dev/vg00 |       135 |        34 | 1 x  LOGICAL VOLUME |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1320.logista.local | /dev/vg03 |       136 |         0 | 1 x  LOGICAL VOLUME |
+| sv1320.logista.local | /dev/vg02 |       136 |        62 | 1 x  LOGICAL VOLUME |
+| sv1320.logista.local | /dev/vg01 |       136 |        41 | 1 x  LOGICAL VOLUME |
+| sv1320.logista.local | /dev/vg00 |       135 |        34 | 1 x  LOGICAL VOLUME |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+----------------+-----------+-----------+---------------------+
+| Server               | VG name        |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+----------------+-----------+-----------+---------------------|
+| sv1390.logista.local | /dev/vgECRParc |         4 |         0 | 1 x  OPEN-V         |
+| sv1390.logista.local | /dev/vgRCSParc |         0 |         0 | 1 x  OPEN-V         |
+| sv1390.logista.local | /dev/vgRCSPlog |         1 |         0 | 1 x  OPEN-V         |
+| sv1390.logista.local | /dev/vgECRPlog |         5 |         0 | 1 x  OPEN-V         |
+| sv1390.logista.local | /dev/vgECRPdbf |       146 |         0 | 9 x  OPEN-V         |
+| sv1390.logista.local | /dev/vgECRPbin |        11 |         0 | 1 x  OPEN-V         |
+| sv1390.logista.local | /dev/vg01      |         9 |         0 | 1 x  HSV400         |
+| sv1390.logista.local | /dev/vg00      |        62 |         0 | 1 x  HSV400         |
+| sv1390.logista.local | /dev/vgRCSPdbf |         5 |         0 | 4 x  OPEN-V         |
++----------------------+----------------+-----------+-----------+---------------------+
+
+
++----------------------+----------------+-----------+-----------+---------------------+
+| Server               | VG name        |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+----------------+-----------+-----------+---------------------|
+| sv1391.logista.local | /dev/vgRCSQlog |         1 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vgECRQlog |         5 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vgRCSQarc |         0 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vgECRQdbf |        11 |         1 | 4 x  HSV400         |
+| sv1391.logista.local | /dev/vgECRQarc |         4 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vg01      |         9 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vg00      |        62 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vgECRQbin |        11 |         0 | 1 x  HSV400         |
+| sv1391.logista.local | /dev/vgRCSQdbf |         7 |         2 | 4 x  HSV400         |
++----------------------+----------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1405.logista.local | /dev/vg03 |       136 |         4 | 1 x  LOGICAL VOLUME |
+| sv1405.logista.local | /dev/vg02 |       136 |        39 | 1 x  LOGICAL VOLUME |
+| sv1405.logista.local | /dev/vg01 |       136 |        18 | 1 x  LOGICAL VOLUME |
+| sv1405.logista.local | /dev/vg00 |       135 |        29 | 1 x  LOGICAL VOLUME |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1406.logista.local | /dev/vg03 |       136 |         4 | 1 x  LOGICAL VOLUME |
+| sv1406.logista.local | /dev/vg02 |       136 |        39 | 1 x  LOGICAL VOLUME |
+| sv1406.logista.local | /dev/vg01 |       136 |        18 | 1 x  LOGICAL VOLUME |
+| sv1406.logista.local | /dev/vg00 |       135 |        29 | 1 x  LOGICAL VOLUME |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-------------+-----------+-----------+---------------------+
+| Server              | VG name     |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-------------+-----------+-----------+---------------------|
+| sv144.logista.local | /dev/vg03   |       999 |       237 | 2 x  Virtual Disk   |
+| sv144.logista.local | /dev/vg01   |         9 |         0 | 1 x  Virtual LvDisk |
+| sv144.logista.local | /dev/vg00   |        54 |         9 | 1 x  Virtual LvDisk |
+| sv144.logista.local | /dev/vgREPO |       199 |         0 | 4 x  Virtual Disk   |
++---------------------+-------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1442.logista.local | /dev/vg03 |       260 |         0 | 4 x  Virtual Disk   |
+| sv1442.logista.local | /dev/vg02 |        82 |         0 | 1 x  Virtual Disk   |
+| sv1442.logista.local | /dev/vg01 |         9 |         5 | 1 x  Virtual Disk   |
+| sv1442.logista.local | /dev/vg00 |        86 |         8 | 2 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1448.logista.local | /dev/vg03 |         9 |         0 | 1 x  Virtual Disk   |
+| sv1448.logista.local | /dev/vg02 |        59 |         0 | 1 x  Virtual Disk   |
+| sv1448.logista.local | /dev/vg01 |        10 |         0 | 1 x  Virtual Disk   |
+| sv1448.logista.local | /dev/vg00 |        79 |        14 | 1 x  Virtual Disk   |
+| sv1448.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1449.logista.local | /dev/vg03 |        29 |         0 | 1 x  Virtual Disk   |
+| sv1449.logista.local | /dev/vg02 |        15 |         0 | 1 x  Virtual Disk   |
+| sv1449.logista.local | /dev/vg01 |        11 |         1 | 1 x  Virtual Disk   |
+| sv1449.logista.local | /dev/vg00 |        79 |        14 | 1 x  Virtual Disk   |
+| sv1449.logista.local | /dev/vg05 |         3 |         0 | 1 x  Virtual Disk   |
+| sv1449.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1451.logista.local | /dev/vg03 |       349 |         0 | 5 x  Virtual Disk   |
+| sv1451.logista.local | /dev/vg02 |        15 |         0 | 1 x  Virtual Disk   |
+| sv1451.logista.local | /dev/vg01 |        11 |         1 | 1 x  Virtual Disk   |
+| sv1451.logista.local | /dev/vg00 |        99 |        34 | 1 x  Virtual Disk   |
+| sv1451.logista.local | /dev/vg05 |         3 |         0 | 1 x  Virtual Disk   |
+| sv1451.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1480.logista.local | /dev/vg03 |       249 |         0 | 1 x  Virtual Disk   |
+| sv1480.logista.local | /dev/vg02 |        15 |         0 | 1 x  Virtual Disk   |
+| sv1480.logista.local | /dev/vg01 |        11 |         0 | 1 x  Virtual Disk   |
+| sv1480.logista.local | /dev/vg00 |        79 |        14 | 1 x  Virtual Disk   |
+| sv1480.logista.local | /dev/vg05 |         3 |         0 | 1 x  Virtual Disk   |
+| sv1480.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1482.logista.local | /dev/vg03 |       271 |         0 | 8 x  Virtual Disk   |
+| sv1482.logista.local | /dev/vg02 |        15 |         0 | 1 x  Virtual Disk   |
+| sv1482.logista.local | /dev/vg01 |        11 |         3 | 1 x  Virtual Disk   |
+| sv1482.logista.local | /dev/vg00 |        79 |        15 | 1 x  Virtual Disk   |
+| sv1482.logista.local | /dev/vg05 |         7 |         0 | 2 x  Virtual Disk   |
+| sv1482.logista.local | /dev/vg04 |        29 |         0 | 3 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-------------+-----------+-----------+---------------------+
+| Server               | VG name     |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-------------+-----------+-----------+---------------------|
+| sv1490.logista.local | /dev/vg03   |        89 |         7 | 1 x  Virtual Disk   |
+| sv1490.logista.local | /dev/vg02   |        59 |         1 | 1 x  Virtual Disk   |
+| sv1490.logista.local | /dev/vg01   |         9 |         1 | 1 x  Virtual Disk   |
+| sv1490.logista.local | /dev/vg00   |        79 |         0 | 1 x  Virtual Disk   |
+| sv1490.logista.local | /dev/vgswap |        15 |         0 | 1 x  Virtual Disk   |
++----------------------+-------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1520.logista.local | /dev/vg03 |        39 |         0 | 4 x  OPEN-V         |
+| sv1520.logista.local | /dev/vg02 |        39 |        25 | 1 x  OPEN-V         |
+| sv1520.logista.local | /dev/vg01 |        19 |        11 | 2 x  HSV400         |
+| sv1520.logista.local | /dev/vg00 |        79 |         1 | 1 x  HSV400         |
+| sv1520.logista.local | /dev/vg07 |        19 |         0 | 2 x  OPEN-V         |
+| sv1520.logista.local | /dev/vg06 |         9 |         6 | 1 x  OPEN-V         |
+| sv1520.logista.local | /dev/vg05 |        19 |         9 | 1 x  OPEN-V         |
+| sv1520.logista.local | /dev/vg04 |         9 |         5 | 1 x  OPEN-V         |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1521.logista.local | /dev/vg17 |        19 |         0 | 2 x  HSV400         |
+| sv1521.logista.local | /dev/vg08 |        29 |         0 | 1 x  HSV400         |
+| sv1521.logista.local | /dev/vg14 |         3 |         0 | 1 x  HSV400         |
+| sv1521.logista.local | /dev/vg15 |         9 |         0 | 1 x  HSV400         |
+| sv1521.logista.local | /dev/vg01 |        19 |        11 | 2 x  HSV400         |
+| sv1521.logista.local | /dev/vg00 |        79 |         1 | 1 x  HSV400         |
+| sv1521.logista.local | /dev/vg16 |         9 |         7 | 1 x  HSV400         |
+| sv1521.logista.local | /dev/vg12 |        19 |         4 | 1 x  HSV400         |
+| sv1521.logista.local | /dev/vg13 |        39 |         0 | 4 x  HSV400         |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1648.logista.local | /dev/vg03 |        39 |         0 | 1 x  Virtual Disk   |
+| sv1648.logista.local | /dev/vg02 |       103 |        12 | 1 x  Virtual Disk   |
+| sv1648.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv1648.logista.local | /dev/vg00 |        79 |        13 | 1 x  Virtual Disk   |
+| sv1648.logista.local | /dev/vg05 |         7 |         0 | 2 x  Virtual Disk   |
+| sv1648.logista.local | /dev/vg04 |        15 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv1649.logista.local | /dev/vg03 |        39 |         0 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg02 |       103 |        12 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg00 |        99 |        33 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg07 |         3 |         0 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg06 |         3 |         0 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg05 |         3 |         0 | 1 x  Virtual Disk   |
+| sv1649.logista.local | /dev/vg04 |        15 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-------------+-----------+-----------+---------------------+
+| Server               | VG name     |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-------------+-----------+-----------+---------------------|
+| sv1654.logista.local | /dev/vg03   |       449 |        16 | 1 x  Virtual Disk   |
+| sv1654.logista.local | /dev/vg02   |        99 |        13 | 1 x  Virtual Disk   |
+| sv1654.logista.local | /dev/vg01   |        29 |        10 | 1 x  Virtual Disk   |
+| sv1654.logista.local | /dev/vg00   |        79 |         0 | 1 x  Virtual Disk   |
+| sv1654.logista.local | /dev/vgTEMP |       199 |         0 | 1 x  Virtual Disk   |
++----------------------+-------------+-----------+-----------+---------------------+
+
+
++---------------------+---------------+-----------+-----------+---------------------+
+| Server              | VG name       |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+---------------+-----------+-----------+---------------------|
+| sv179.logista.local | /dev/vgALMA   |        36 |         3 | 2 x  Virtual Disk   |
+| sv179.logista.local | /dev/vgoracle |       119 |         0 | 12 x  Virtual Disk  |
+| sv179.logista.local | /dev/vg01     |         9 |         0 | 1 x  Virtual Disk   |
+| sv179.logista.local | /dev/vg00     |        54 |         9 | 1 x  Virtual Disk   |
++---------------------+---------------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv190.logista.local | /dev/vg03 |       274 |        12 | 1 x  Virtual Disk   |
+| sv190.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv190.logista.local | /dev/vg00 |        70 |         9 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv191.logista.local | /dev/vg11 |       255 |         0 | 4 x  HSV400         |
+| sv191.logista.local | /dev/vg14 |         5 |         0 | 1 x  HSV400         |
+| sv191.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv191.logista.local | /dev/vg00 |        94 |         9 | 1 x  HSV400         |
+| sv191.logista.local | /dev/vg10 |        99 |        10 | 3 x  HSV400         |
+| sv191.logista.local | /dev/vg16 |         9 |         0 | 1 x  HSV400         |
+| sv191.logista.local | /dev/vg12 |         1 |         0 | 1 x  HSV400         |
+| sv191.logista.local | /dev/vg13 |         1 |         0 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv192.logista.local | /dev/vg03 |      1120 |         0 | 48 x  OPEN-V        |
+| sv192.logista.local | /dev/vg02 |        79 |         2 | 4 x  OPEN-V         |
+| sv192.logista.local | /dev/vg01 |         9 |         0 | 1 x  OPEN-V         |
+| sv192.logista.local | /dev/vg00 |        94 |         9 | 1 x  OPEN-V         |
+| sv192.logista.local | /dev/vg06 |        84 |         5 | 9 x  OPEN-V         |
+| sv192.logista.local | /dev/vg05 |         1 |         0 | 1 x  OPEN-V         |
+| sv192.logista.local | /dev/vg04 |         1 |         0 | 1 x  OPEN-V         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------------+-----------+-----------+---------------------+
+| Server               | VG name         |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------------+-----------+-----------+---------------------|
+| sv2000.logista.local | /dev/vgoracle   |         9 |         0 | 2 x  OPEN-V         |
+| sv2000.logista.local | /dev/vgora11204 |        49 |        34 | 1 x                 |
+| sv2000.logista.local | /dev/vgDIAH_EVA |      1599 |         0 | 4 x  HSV400         |
+| sv2000.logista.local | /dev/vg14       |      1099 |         0 | 3 x  HSV400         |
+| sv2000.logista.local | /dev/vg15       |         9 |         0 | 1 x  HSV400         |
+| sv2000.logista.local | /dev/vg01       |         9 |         1 | 1 x  HSV400         |
+| sv2000.logista.local | /dev/vg00       |        79 |         5 | 1 x  HSV400         |
+| sv2000.logista.local | /dev/vg11       |        24 |        13 | 1 x  HSV400         |
+| sv2000.logista.local | /dev/vg12       |         9 |         3 | 1 x  HSV400         |
+| sv2000.logista.local | /dev/vg13       |         9 |         3 | 1 x  HSV400         |
++----------------------+-----------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2004.logista.local | /dev/vg00 |       271 |       131 | 2 x  EH0146FAWJB    |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-------------+-----------+-----------+---------------------+
+| Server               | VG name     |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-------------+-----------+-----------+---------------------|
+| sv2005.logista.local | /dev/vg01   |        10 |         0 | 1 x  OPEN-V         |
+| sv2005.logista.local | /dev/vg00   |        69 |         8 | 1 x  OPEN-V         |
+| sv2005.logista.local | /dev/vgtemp |       199 |         0 | 1 x  OPEN-V*5       |
+| sv2005.logista.local | /dev/VGDP   |       140 |         0 | 2 x  OPEN-V         |
++----------------------+-------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2006.logista.local | /dev/vg03 |     11565 |         0 | 82 x  OPEN-V        |
+| sv2006.logista.local | /dev/vg01 |        10 |         1 | 1 x  OPEN-V         |
+| sv2006.logista.local | /dev/vg00 |        68 |         1 | 1 x  OPEN-V         |
+| sv2006.logista.local | /dev/vg90 |        39 |        35 | 1 x  OPEN-V         |
+| sv2006.logista.local | /dev/vg91 |        39 |        35 | 1 x  OPEN-0V        |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2008.logista.local | /dev/vg01 |        23 |         1 | 2 x  Virtual Disk   |
+| sv2008.logista.local | /dev/vg00 |        58 |         8 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2009.logista.local | /dev/vg01 |         9 |         2 | 1 x  Virtual Disk   |
+| sv2009.logista.local | /dev/vg00 |        70 |         9 | 1 x  Virtual Disk   |
+| sv2009.logista.local | /dev/VGDP |       169 |         0 | 2 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2019.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv2019.logista.local | /dev/vg00 |        70 |         9 | 2 x  HSV400         |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2020.logista.local | /dev/vg01 |        10 |         0 | 1 x  OPEN-V         |
+| sv2020.logista.local | /dev/vg00 |        69 |         8 | 1 x  OPEN-V         |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2021.logista.local | /dev/vg01 |        10 |         1 | 1 x  OPEN-V         |
+| sv2021.logista.local | /dev/vg00 |        70 |         9 | 1 x  OPEN-V         |
+| sv2021.logista.local | /dev/vg06 |      3278 |         0 | 33 x  OPEN-V        |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2023.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv2023.logista.local | /dev/vg00 |        70 |         5 | 2 x  Virtual Disk   |
+| sv2023.logista.local | /dev/VGDP |       174 |         0 | 2 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2028.logista.local | /dev/vg01 |        18 |         0 | 2 x  Virtual Disk   |
+| sv2028.logista.local | /dev/vg00 |        58 |         8 | 2 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+--------------+-----------+-----------+---------------------+
+| Server               | VG name      |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+--------------+-----------+-----------+---------------------|
+| sv2030.logista.local | /dev/vg01    |         9 |         0 | 1 x  Virtual Disk   |
+| sv2030.logista.local | /dev/vg00    |        78 |         9 | 1 x  Virtual Disk   |
+| sv2030.logista.local | /dev/vgdatos |       169 |         1 | 3 x  Virtual Disk   |
++----------------------+--------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------------+-----------+-----------+---------------------+
+| Server               | VG name         |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------------+-----------+-----------+---------------------|
+| sv2051.logista.local | /dev/vg03_PIP   |        79 |         0 | 4 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg02_PIP   |        59 |         9 | 1 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg04_PIP   |         3 |         0 | 1 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vgtemporal |        49 |         0 | 1 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vgswap     |        63 |         0 | 1 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg03       |       119 |         0 | 8 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg02       |        63 |         0 | 2 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg01       |         9 |         1 | 1 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg00       |        59 |        14 | 1 x  Virtual Disk   |
+| sv2051.logista.local | /dev/vg04       |         5 |         3 | 1 x  Virtual Disk   |
++----------------------+-----------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2053.logista.local | /dev/vg03 |       199 |         0 | 8 x  Virtual Disk   |
+| sv2053.logista.local | /dev/vg02 |        10 |         0 | 1 x  Virtual Disk   |
+| sv2053.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2053.logista.local | /dev/vg00 |        71 |        13 | 2 x  Virtual Disk   |
+| sv2053.logista.local | /dev/vg04 |         4 |         1 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2055.logista.local | /dev/vg03 |        59 |         7 | 6 x  Virtual Disk   |
+| sv2055.logista.local | /dev/vg02 |         9 |         0 | 1 x  Virtual Disk   |
+| sv2055.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2055.logista.local | /dev/vg00 |        99 |        25 | 2 x  Virtual Disk   |
+| sv2055.logista.local | /dev/vg05 |        19 |         4 | 2 x  Virtual Disk   |
+| sv2055.logista.local | /dev/vg04 |        19 |         0 | 2 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2057.logista.local | /dev/vg03 |        55 |        20 | 8 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg02 |        16 |         0 | 1 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg00 |        54 |         9 | 1 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg07 |         2 |         0 | 1 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg06 |        79 |         0 | 3 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg05 |         9 |         6 | 2 x  Virtual Disk   |
+| sv2057.logista.local | /dev/vg04 |        15 |         0 | 2 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2059.logista.local | /dev/vg03 |       211 |         0 | 8 x  Virtual Disk   |
+| sv2059.logista.local | /dev/vg02 |        19 |         0 | 1 x  Virtual Disk   |
+| sv2059.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2059.logista.local | /dev/vg00 |        53 |         8 | 1 x  Virtual Disk   |
+| sv2059.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2061.logista.local | /dev/vg03 |        33 |         0 | 2 x  Virtual Disk   |
+| sv2061.logista.local | /dev/vg02 |        10 |         1 | 1 x  Virtual Disk   |
+| sv2061.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2061.logista.local | /dev/vg00 |        71 |        14 | 1 x  Virtual Disk   |
+| sv2061.logista.local | /dev/vg04 |         9 |         3 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-------------+-----------+-----------+---------------------+
+| Server               | VG name     |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-------------+-----------+-----------+---------------------|
+| sv2062.logista.local | /dev/vgtemp |        14 |         0 | 1 x  Virtual Disk   |
+| sv2062.logista.local | /dev/vg03   |       259 |         1 | 2 x  Virtual Disk   |
+| sv2062.logista.local | /dev/vg02   |        13 |         0 | 2 x  Virtual Disk   |
+| sv2062.logista.local | /dev/vg01   |         9 |         1 | 1 x  Virtual Disk   |
+| sv2062.logista.local | /dev/vg00   |        71 |        14 | 2 x  Virtual Disk   |
+| sv2062.logista.local | /dev/vg04   |         4 |         1 | 1 x  Virtual Disk   |
++----------------------+-------------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2063.logista.local | /dev/vg03 |        27 |         2 | 12 x  Virtual Disk  |
+| sv2063.logista.local | /dev/vg02 |         6 |         0 | 1 x  Virtual Disk   |
+| sv2063.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv2063.logista.local | /dev/vg00 |        53 |         8 | 1 x  Virtual Disk   |
+| sv2063.logista.local | /dev/vg05 |         2 |         0 | 1 x  Virtual Disk   |
+| sv2063.logista.local | /dev/vg04 |        14 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2065.logista.local | /dev/vg03 |        91 |         0 | 1 x  Virtual Disk   |
+| sv2065.logista.local | /dev/vg02 |        11 |         0 | 1 x  Virtual Disk   |
+| sv2065.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2065.logista.local | /dev/vg00 |        54 |         9 | 1 x  Virtual Disk   |
+| sv2065.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2066.logista.local | /dev/vg03 |        19 |         0 | 2 x  Virtual Disk   |
+| sv2066.logista.local | /dev/vg02 |         6 |         0 | 1 x  Virtual Disk   |
+| sv2066.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv2066.logista.local | /dev/vg00 |        82 |         8 | 1 x  Virtual Disk   |
+| sv2066.logista.local | /dev/vg05 |        19 |         0 | 1 x  Virtual Disk   |
+| sv2066.logista.local | /dev/vg04 |         1 |         1 | 1 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++----------------------+-----------+-----------+-----------+---------------------+
+| Server               | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|----------------------+-----------+-----------+-----------+---------------------|
+| sv2067.logista.local | /dev/vg03 |        79 |         0 | 8 x  Virtual Disk   |
+| sv2067.logista.local | /dev/vg02 |        14 |         2 | 1 x  Virtual Disk   |
+| sv2067.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv2067.logista.local | /dev/vg00 |        63 |        14 | 2 x  Virtual Disk   |
+| sv2067.logista.local | /dev/vg06 |        79 |         0 | 1 x  Virtual Disk   |
+| sv2067.logista.local | /dev/vg05 |         9 |         3 | 1 x  Virtual Disk   |
+| sv2067.logista.local | /dev/vg04 |        15 |         0 | 3 x  Virtual Disk   |
++----------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv282.logista.local | /dev/vg03 |       574 |        78 | 2 x  Virtual Disk   |
+| sv282.logista.local | /dev/vg02 |        99 |         0 | 2 x  Virtual Disk   |
+| sv282.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv282.logista.local | /dev/vg00 |        61 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+--------------+-----------+-----------+---------------------+
+| Server              | VG name      |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+--------------+-----------+-----------+---------------------|
+| sv283.logista.local | /dev/vgtemp2 |        24 |         0 | 1 x  HSV400         |
+| sv283.logista.local | /dev/vg01    |         9 |         1 | 1 x  HSV400         |
+| sv283.logista.local | /dev/vg00    |        79 |         6 | 1 x  HSV400         |
+| sv283.logista.local | /dev/vg11    |        29 |         0 | 1 x  HSV400         |
+| sv283.logista.local | /dev/vg12    |       899 |         9 | 1 x  HSV400         |
++---------------------+--------------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv284.logista.local | /dev/vg17 |        81 |         0 | 3 x  HSV400         |
+| sv284.logista.local | /dev/vg08 |         4 |         0 | 1 x  OPEN-V         |
+| sv284.logista.local | /dev/vg18 |      1535 |         0 | 2 x  HSV400         |
+| sv284.logista.local | /dev/vg14 |         3 |         0 | 1 x  HSV400         |
+| sv284.logista.local | /dev/vg15 |         3 |         0 | 1 x  HSV400         |
+| sv284.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv284.logista.local | /dev/vg00 |       139 |        14 | 1 x  HSV400         |
+| sv284.logista.local | /dev/vg16 |        39 |         0 | 1 x  HSV400         |
+| sv284.logista.local | /dev/vg13 |        39 |         0 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv290.logista.local | /dev/vg03 |        59 |        13 | 4 x  OPEN-V         |
+| sv290.logista.local | /dev/vg02 |      4438 |         0 | 36 x  OPEN-V        |
+| sv290.logista.local | /dev/vg01 |         9 |         1 | 1 x  OPEN-V         |
+| sv290.logista.local | /dev/vg00 |       139 |        14 | 1 x  OPEN-V         |
+| sv290.logista.local | /dev/vg07 |       219 |        12 | 12 x  OPEN-V        |
+| sv290.logista.local | /dev/vg06 |        79 |        15 | 4 x  OPEN-V         |
+| sv290.logista.local | /dev/vg05 |        11 |         0 | 4 x  OPEN-V         |
+| sv290.logista.local | /dev/vg04 |        11 |         0 | 4 x  OPEN-V         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv293.logista.local | /dev/vg03 |        39 |         0 | 1 x  HSV400         |
+| sv293.logista.local | /dev/vg02 |       319 |         0 | 1 x  HSV400         |
+| sv293.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv293.logista.local | /dev/vg00 |       117 |         8 | 1 x  HSV400         |
+| sv293.logista.local | /dev/vg04 |        19 |         0 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv363.logista.local | /dev/vg03 |        42 |         1 | 5 x  OPEN-V         |
+| sv363.logista.local | /dev/vg02 |        99 |         0 | 4 x  OPEN-V         |
+| sv363.logista.local | /dev/vg01 |         9 |         1 | 1 x  OPEN-V         |
+| sv363.logista.local | /dev/vg00 |        79 |         6 | 1 x  OPEN-V         |
+| sv363.logista.local | /dev/vg06 |      2031 |         5 | 32 x  OPEN-V        |
+| sv363.logista.local | /dev/vg05 |        24 |        20 | 1 x  OPEN-V         |
+| sv363.logista.local | /dev/vg04 |        24 |        20 | 1 x  OPEN-V         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+---------------+-----------+-----------+---------------------+
+| Server              | VG name       |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+---------------+-----------+-----------+---------------------|
+| sv364.logista.local | /dev/vgoracle |         9 |         0 | 2 x  OPEN-V         |
+| sv364.logista.local | /dev/vg03     |        39 |        17 | 4 x  OPEN-V         |
+| sv364.logista.local | /dev/vg01     |         9 |         1 | 1 x  HSV400         |
+| sv364.logista.local | /dev/vg00     |        79 |         5 | 1 x  HSV400         |
+| sv364.logista.local | /dev/vg07     |        39 |         5 | 4 x  OPEN-V         |
+| sv364.logista.local | /dev/vg06     |      5666 |         7 | 52 x  OPEN-V        |
+| sv364.logista.local | /dev/vg05     |         9 |         0 | 2 x  OPEN-V         |
+| sv364.logista.local | /dev/vg04     |         9 |         0 | 2 x  OPEN-V         |
++---------------------+---------------+-----------+-----------+---------------------+
+
+
++--------------------+-----------+-----------+-----------+---------------------+
+| Server             | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|--------------------+-----------+-----------+-----------+---------------------|
+| sv42.logista.local | /dev/vg03 |      2719 |      1504 | 8 x  Virtual Disk   |
+| sv42.logista.local | /dev/vg02 |        39 |         4 | 1 x  Virtual Disk   |
+| sv42.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv42.logista.local | /dev/vg00 |        70 |         9 | 2 x  Virtual Disk   |
++--------------------+-----------+-----------+-----------+---------------------+
+
+
++----------+-----------+-----------+-----------+---------------------+
+| Server   | VG name   | Size Gb   | Free Gb   | Disks count types   |
+|----------+-----------+-----------+-----------+---------------------|
++----------+-----------+-----------+-----------+---------------------+
+
+
++----------+-----------+-----------+-----------+---------------------+
+| Server   | VG name   | Size Gb   | Free Gb   | Disks count types   |
+|----------+-----------+-----------+-----------+---------------------|
++----------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv574.logista.local | /dev/vg08 |        24 |         2 | 1 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg03 |       320 |         0 | 3 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg02 |        94 |         9 | 2 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg01 |         9 |         1 | 1 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg00 |        69 |         8 | 1 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg07 |        19 |         1 | 1 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg06 |         9 |         0 | 1 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg05 |         1 |         0 | 1 x  Virtual Disk   |
+| sv574.logista.local | /dev/vg04 |         1 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv575.logista.local | /dev/vg09 |        39 |         0 | 2 x  OPEN-V         |
+| sv575.logista.local | /dev/vg08 |        37 |         0 | 2 x  OPEN-V         |
+| sv575.logista.local | /dev/vg03 |     11695 |         0 | 87 x  OPEN-V        |
+| sv575.logista.local | /dev/vg02 |       161 |         0 | 5 x  OPEN-V         |
+| sv575.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| sv575.logista.local | /dev/vg00 |       239 |         9 | 1 x  HSV400         |
+| sv575.logista.local | /dev/vg07 |        14 |         0 | 1 x  OPEN-V         |
+| sv575.logista.local | /dev/vg06 |       199 |         7 | 8 x  OPEN-V         |
+| sv575.logista.local | /dev/vg05 |        15 |         2 | 8 x  OPEN-V         |
+| sv575.logista.local | /dev/vg04 |        15 |         2 | 8 x  OPEN-V         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------------+-----------+-----------+---------------------+
+| Server              | VG name         |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------------+-----------+-----------+---------------------|
+| sv576.logista.local | /dev/vgtempHANA |       309 |         0 | 3 x  OPEN-V         |
+| sv576.logista.local | /dev/vg09       |        39 |         0 | 2 x  OPEN-V         |
+| sv576.logista.local | /dev/vg08       |        37 |         0 | 2 x  OPEN-V         |
+| sv576.logista.local | /dev/vg03       |     11565 |         0 | 82 x  OPEN-V        |
+| sv576.logista.local | /dev/vg02       |       161 |         0 | 5 x  OPEN-V         |
+| sv576.logista.local | /dev/vg01       |         9 |         0 | 1 x  HSV400         |
+| sv576.logista.local | /dev/vg00       |       239 |        10 | 1 x  HSV400         |
+| sv576.logista.local | /dev/vg07       |        14 |         0 | 1 x  OPEN-V         |
+| sv576.logista.local | /dev/vg06       |       199 |         7 | 8 x  OPEN-V         |
+| sv576.logista.local | /dev/vg05       |        15 |         2 | 8 x  OPEN-V         |
+| sv576.logista.local | /dev/vg04       |        15 |         2 | 8 x  OPEN-V         |
++---------------------+-----------------+-----------+-----------+---------------------+
+
+
++----------+-----------+-----------+-----------+---------------------+
+| Server   | VG name   | Size Gb   | Free Gb   | Disks count types   |
+|----------+-----------+-----------+-----------+---------------------|
++----------+-----------+-----------+-----------+---------------------+
+
+
++----------+-----------+-----------+-----------+---------------------+
+| Server   | VG name   | Size Gb   | Free Gb   | Disks count types   |
+|----------+-----------+-----------+-----------+---------------------|
++----------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv589.logista.local | /dev/vg03 |        19 |         0 | 1 x  Virtual Disk   |
+| sv589.logista.local | /dev/vg02 |       129 |        16 | 1 x  Virtual Disk   |
+| sv589.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv589.logista.local | /dev/vg00 |        69 |         8 | 1 x  Virtual Disk   |
+| sv589.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++--------------------+---------------+-----------+-----------+---------------------+
+| Server             | VG name       |   Size Gb |   Free Gb | Disks count types   |
+|--------------------+---------------+-----------+-----------+---------------------|
+| sv59.logista.local | /dev/vgtemp2  |        24 |        10 | 1 x  HSV400         |
+| sv59.logista.local | /dev/VGTEMP   |        49 |         0 | 1 x  HSV400         |
+| sv59.logista.local | /dev/vgoracle |         4 |         0 | 1 x  OPEN-V         |
+| sv59.logista.local | /dev/vg14     |         1 |         0 | 1 x  HSV400         |
+| sv59.logista.local | /dev/vg15     |         1 |         0 | 1 x  HSV400         |
+| sv59.logista.local | /dev/vg01     |         9 |         0 | 1 x  HSV400         |
+| sv59.logista.local | /dev/vg00     |        62 |         8 | 2 x  HSV400         |
+| sv59.logista.local | /dev/vg17     |       110 |         0 | 2 x  HSV400         |
+| sv59.logista.local | /dev/vg16     |        19 |         0 | 1 x  HSV400         |
+| sv59.logista.local | /dev/vg13     |       619 |         4 | 1 x  HSV400         |
++--------------------+---------------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv590.logista.local | /dev/vg03 |        19 |         0 | 1 x  Virtual Disk   |
+| sv590.logista.local | /dev/vg02 |       324 |         3 | 2 x  Virtual Disk   |
+| sv590.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv590.logista.local | /dev/vg00 |        89 |         4 | 1 x  Virtual Disk   |
+| sv590.logista.local | /dev/vg04 |         9 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv596.logista.local | /dev/vg03 |        91 |        10 | 2 x  Virtual Disk   |
+| sv596.logista.local | /dev/vg02 |         4 |         0 | 1 x  Virtual Disk   |
+| sv596.logista.local | /dev/vg01 |        12 |         0 | 1 x  Virtual Disk   |
+| sv596.logista.local | /dev/vg00 |        61 |         0 | 1 x  Virtual Disk   |
+| sv596.logista.local | /dev/vg06 |       294 |         0 | 2 x  Virtual Disk   |
+| sv596.logista.local | /dev/vg05 |         0 |         0 | 1 x  Virtual Disk   |
+| sv596.logista.local | /dev/vg04 |         0 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv597.logista.local | /dev/vg14 |         0 |         0 | 1 x  HSV400         |
+| sv597.logista.local | /dev/vg19 |       129 |         7 | 1 x  HSV400         |
+| sv597.logista.local | /dev/vg03 |         4 |         0 | 1 x  OPEN-V         |
+| sv597.logista.local | /dev/vg15 |         0 |         0 | 1 x  HSV400         |
+| sv597.logista.local | /dev/vg01 |        19 |         5 | 1 x  HSV400         |
+| sv597.logista.local | /dev/vg00 |       139 |         5 | 1 x  HSV400         |
+| sv597.logista.local | /dev/vg16 |      2399 |         0 | 2 x  HSV400         |
+| sv597.logista.local | /dev/vg12 |        11 |         2 | 1 x  HSV400         |
+| sv597.logista.local | /dev/vg13 |        21 |         0 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++--------------------+-----------+-----------+-----------+---------------------+
+| Server             | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|--------------------+-----------+-----------+-----------+---------------------|
+| sv60.logista.local | /dev/vg01 |        10 |         0 | 1 x  HSV400         |
+| sv60.logista.local | /dev/vg00 |        61 |         7 | 1 x  HSV400         |
+| sv60.logista.local | /dev/vg12 |         4 |         0 | 1 x  HSV400         |
+| sv60.logista.local | /dev/vg13 |       107 |         0 | 1 x  HSV400         |
++--------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv600.logista.local | /dev/vg09 |       239 |         4 | 8 x  OPEN-V         |
+| sv600.logista.local | /dev/vg08 |        69 |         3 | 5 x  OPEN-V         |
+| sv600.logista.local | /dev/vg02 |         4 |         0 | 1 x  OPEN-V         |
+| sv600.logista.local | /dev/vg01 |        69 |        52 | 1 x  OPEN-V         |
+| sv600.logista.local | /dev/vg00 |       139 |        11 | 1 x  OPEN-V         |
+| sv600.logista.local | /dev/vg06 |      3158 |         0 | 36 x  OPEN-V        |
+| sv600.logista.local | /dev/vg05 |        19 |         7 | 4 x  OPEN-V         |
+| sv600.logista.local | /dev/vg04 |        19 |         7 | 4 x  OPEN-V         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++--------------------+-----------+-----------+-----------+---------------------+
+| Server             | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|--------------------+-----------+-----------+-----------+---------------------|
+| sv65.logista.local | /dev/vg02 |       129 |         4 | 1 x  Virtual Disk   |
+| sv65.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv65.logista.local | /dev/vg00 |        70 |         8 | 2 x  Virtual Disk   |
++--------------------+-----------+-----------+-----------+---------------------+
+
+
++----------+-----------+-----------+-----------+---------------------+
+| Server   | VG name   | Size Gb   | Free Gb   | Disks count types   |
+|----------+-----------+-----------+-----------+---------------------|
++----------+-----------+-----------+-----------+---------------------+
+
+
++----------+-----------+-----------+-----------+---------------------+
+| Server   | VG name   | Size Gb   | Free Gb   | Disks count types   |
+|----------+-----------+-----------+-----------+---------------------|
++----------+-----------+-----------+-----------+---------------------+
+
+
++--------------------+-----------+-----------+-----------+---------------------+
+| Server             | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|--------------------+-----------+-----------+-----------+---------------------|
+| sv91.logista.local | /dev/vg03 |       121 |         4 | 16 x  OPEN-V        |
+| sv91.logista.local | /dev/vg02 |        14 |         0 | 1 x  OPEN-V         |
+| sv91.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv91.logista.local | /dev/vg00 |        61 |         8 | 1 x  HSV400         |
+| sv91.logista.local | /dev/vg04 |        19 |         0 | 1 x  OPEN-V         |
++--------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv929.logista.local | /dev/vg02 |       136 |         2 | 4 x  HSV200         |
+| sv929.logista.local | /dev/vg00 |       135 |        79 | 1 x  IR Volume      |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv930.logista.local | /dev/vg02 |       116 |         2 | 3 x  HSV200         |
+| sv930.logista.local | /dev/vg01 |       494 |        29 | 13 x  HSV200        |
+| sv930.logista.local | /dev/vg00 |       135 |        41 | 1 x  IR Volume      |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv937.logista.local | /dev/vg03 |       194 |         0 | 2 x  Virtual Disk   |
+| sv937.logista.local | /dev/vg02 |        54 |         0 | 1 x  Virtual Disk   |
+| sv937.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv937.logista.local | /dev/vg00 |        70 |         9 | 1 x  Virtual Disk   |
+| sv937.logista.local | /dev/vg04 |         4 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+---------------+-----------+-----------+---------------------+
+| Server              | VG name       |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+---------------+-----------+-----------+---------------------|
+| sv944.logista.local | /dev/vgoracle |         9 |         0 | 1 x  OPEN-V         |
+| sv944.logista.local | /dev/vg03     |         8 |         0 | 2 x  OPEN-V         |
+| sv944.logista.local | /dev/vg02     |       124 |         0 | 6 x  OPEN-V         |
+| sv944.logista.local | /dev/vg01     |         9 |         1 | 1 x  HSV400         |
+| sv944.logista.local | /dev/vg00     |       119 |        10 | 1 x  HSV400         |
+| sv944.logista.local | /dev/vg06     |      3278 |         0 | 33 x  OPEN-V        |
+| sv944.logista.local | /dev/vg05     |        39 |        12 | 4 x  OPEN-V         |
+| sv944.logista.local | /dev/vg04     |         8 |         0 | 2 x  OPEN-V         |
++---------------------+---------------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv945.logista.local | /dev/vg03 |        14 |         0 | 1 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg02 |        41 |        10 | 5 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg01 |         9 |         0 | 1 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg00 |        94 |         9 | 2 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg07 |        59 |         9 | 4 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg06 |         4 |         0 | 1 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg05 |         1 |         0 | 1 x  Virtual Disk   |
+| sv945.logista.local | /dev/vg04 |         1 |         0 | 1 x  Virtual Disk   |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+---------------+-----------+-----------+---------------------+
+| Server              | VG name       |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+---------------+-----------+-----------+---------------------|
+| sv946.logista.local | /dev/vg10     |         5 |         0 | 1 x  HSV400         |
+| sv946.logista.local | /dev/vgoracle |         9 |         0 | 1 x  OPEN-V         |
+| sv946.logista.local | /dev/vg09     |         5 |         0 | 1 x  HSV400         |
+| sv946.logista.local | /dev/vg08     |      2219 |         0 | 11 x  HSV400        |
+| sv946.logista.local | /dev/vg01     |         9 |         1 | 1 x  HSV400         |
+| sv946.logista.local | /dev/vg00     |       119 |        10 | 1 x  HSV400         |
+| sv946.logista.local | /dev/vg07     |        89 |        10 | 2 x  HSV400         |
+| sv946.logista.local | /dev/vg11     |         9 |         0 | 1 x  HSV400         |
+| sv946.logista.local | /dev/vg12     |        12 |         0 | 1 x  HSV400         |
++---------------------+---------------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv948.logista.local | /dev/vg17 |         1 |         0 | 1 x  HSV400         |
+| sv948.logista.local | /dev/vg08 |         4 |         0 | 1 x  OPEN-V         |
+| sv948.logista.local | /dev/vg18 |         4 |         0 | 1 x  HSV400         |
+| sv948.logista.local | /dev/vg14 |        14 |         0 | 1 x  HSV400         |
+| sv948.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv948.logista.local | /dev/vg00 |        69 |         8 | 1 x  HSV400         |
+| sv948.logista.local | /dev/vg16 |         1 |         0 | 1 x  HSV400         |
+| sv948.logista.local | /dev/vg12 |        44 |         0 | 2 x  HSV400         |
+| sv948.logista.local | /dev/vg13 |       299 |         0 | 3 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv950.logista.local | /dev/vg19 |         9 |         0 | 1 x  OPEN-V         |
+| sv950.logista.local | /dev/vg03 |      1366 |         0 | 60 x  OPEN-V        |
+| sv950.logista.local | /dev/vg02 |        55 |         0 | 16 x  OPEN-V        |
+| sv950.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| sv950.logista.local | /dev/vg00 |        69 |         8 | 1 x  HSV400         |
+| sv950.logista.local | /dev/vg07 |         1 |         0 | 1 x  OPEN-V         |
+| sv950.logista.local | /dev/vg06 |         1 |         0 | 1 x  OPEN-V         |
+| sv950.logista.local | /dev/vg05 |        29 |         0 | 2 x  OPEN-V         |
+| sv950.logista.local | /dev/vg04 |        21 |         5 | 5 x  OPEN-V         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| sv983.logista.local | /dev/vg17 |        59 |        19 | 2 x  HSV400         |
+| sv983.logista.local | /dev/vg08 |         4 |         0 | 1 x  OPEN-V         |
+| sv983.logista.local | /dev/vg18 |         9 |         0 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg14 |         3 |         0 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg15 |         3 |         0 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg00 |       169 |        11 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg16 |         9 |         0 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg12 |        64 |         6 | 1 x  HSV400         |
+| sv983.logista.local | /dev/vg13 |      3659 |        37 | 7 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh001.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| vh001.logista.local | /dev/vg00 |        89 |        12 | 2 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh002.logista.local | /dev/vg00 |       384 |        62 | 2 x  EG0300FARTT    |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh003.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh003.logista.local | /dev/vg00 |        86 |         9 | 2 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh004.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| vh004.logista.local | /dev/vg00 |       121 |        12 | 2 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh005.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh005.logista.local | /dev/vg00 |       118 |         9 | 2 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh006.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| vh006.logista.local | /dev/vg00 |       121 |        12 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh007.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh007.logista.local | /dev/vg00 |        85 |         8 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh008.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh008.logista.local | /dev/vg00 |        79 |         2 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+----------------------------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types                      |
+|---------------------+-----------+-----------+-----------+----------------------------------------|
+| vh009.logista.local | /dev/vg00 |       384 |        82 | 1 x  EG0300FAWHV      1 x  EG0300FARTT |
++---------------------+-----------+-----------+-----------+----------------------------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh010.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh010.logista.local | /dev/vg00 |        94 |         9 | 2 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh011.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh011.logista.local | /dev/vg00 |        84 |         0 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh054.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| vh054.logista.local | /dev/vg00 |       107 |         8 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh055.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| vh055.logista.local | /dev/vg00 |       110 |         9 | 2 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh056.logista.local | /dev/vg01 |         9 |         5 | 1 x  HSV400         |
+| vh056.logista.local | /dev/vg00 |        84 |        37 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh057.logista.local | /dev/vg01 |         9 |         0 | 1 x  HSV400         |
+| vh057.logista.local | /dev/vg00 |        99 |        51 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
++---------------------+-----------+-----------+-----------+---------------------+
+| Server              | VG name   |   Size Gb |   Free Gb | Disks count types   |
+|---------------------+-----------+-----------+-----------+---------------------|
+| vh058.logista.local | /dev/vg01 |         9 |         1 | 1 x  HSV400         |
+| vh058.logista.local | /dev/vg00 |        99 |        50 | 1 x  HSV400         |
++---------------------+-----------+-----------+-----------+---------------------+
+
+
