@@ -3,9 +3,11 @@ import paramiko, base64
 import re
 import string
 from tabulate import tabulate
+from pprint import pprint
 
 keypriv ='id_rsa'
-hosts = open('hostlist.cfg','r').readlines()
+#hosts = open('hostlist.cfg','r').readlines()
+hosts = ['sv950']
 vgsdatadict={}
 
 
@@ -33,9 +35,20 @@ def showvginfo(host):
 		modelos.clear()
 	print tabulate(outputlist,headers,tablefmt="psql")
 	print '\n'
+
 def extractvgsize(host):
 	 for N in vgsdatadict[host]['vgs'].keys():
 		print 'Tamaño ' + str(N) + ' ' + str(int(vgsdatadict[host]['vgs'][N]['pe_size']) * int(vgsdatadict[host]['vgs'][N]['total_pe'])/1024) + 'Gb'
+
+def convert_to_raw(disk):
+	diskraw = string.replace(disk,'/disk/','/rdisk/')
+	return diskraw
+
+def extract_wwid(diskraw):
+	comando = "scsimgr get_attr  -a wwid -p -D " + diskraw
+	stdin, stdout, stderr = ssh.exec_command(comando)
+        wwid = stdout.readline()
+	return wwid
 
 for host in hosts:
 	#remove \n for ssh connection
@@ -45,7 +58,7 @@ for host in hosts:
 
 	ssh = paramiko.SSHClient()
 	ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-	ssh.connect( host, key_filename=keypriv)
+	ssh.connect( host, key_filename=keypriv, timeout=10)
 	stdin, stdout, stderr = ssh.exec_command("vgdisplay -v -F | grep -v 'vg_status=deactivated'")
 	vgdata = stdout.readlines()
 	for line in vgdata:
@@ -69,7 +82,7 @@ for host in hosts:
 	#Obtener modelo e introducirlo en el dict una vez procesadas las entradas de vgdisplay
 	for N in vgsdatadict[host]['vgs'].keys():
 		for disk in vgsdatadict[host]['vgs'][N]['pvs'].keys():
-			diskraw = string.replace(disk,'/disk/','/rdisk/')
+			diskraw = convert_to_raw(disk)
 			comando="diskinfo " + diskraw + "| grep 'product id:' | awk -F: '{print $NF}'"
 		        stdin, stdout, stderr = ssh.exec_command(comando)
        			diskmodel = stdout.readline()
@@ -79,3 +92,4 @@ for host in hosts:
 
 	#Mostrar diferentes resultados por pantalla
 	showvginfo(host)
+#pprint(vgsdatadict)
