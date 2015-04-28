@@ -1,5 +1,5 @@
 # coding=utf-8
-import paramiko, base64
+from sshmanager import *
 import re
 import string
 from tabulate import tabulate
@@ -7,9 +7,8 @@ from pprint import pprint
 
 keypriv ='id_rsa'
 #hosts = open('hostlist.cfg','r').readlines()
-hosts = ['sv950']
+hosts = ['sv950','sv144','vh055']
 vgsdatadict={}
-
 
 def showvginfo(host):
 	modellist=[]
@@ -22,6 +21,7 @@ def showvginfo(host):
 		for k,v in vgsdatadict[host]['vgs'][N]['pvs'].items():
 			modellist.append(vgsdatadict[host]['vgs'][N]['pvs'][k]['model'])
 
+		print modellist.count()
 		modelos=dict((x,modellist.count(x)) for x in set(modellist))
 		m=''
 		t=''
@@ -44,25 +44,32 @@ def convert_to_raw(disk):
 	diskraw = string.replace(disk,'/disk/','/rdisk/')
 	return diskraw
 
+def is_hpivm():
+	typeivm=str(mycon.run('/opt/hpvm/bin/hpvminfo','s'))
+	print host
+	if 'Running inside an HPVM guest' in typeivm:
+		hpivm='guest'
+	elif 'Running on an HPVM host' in typeivm:
+		hpivm='host'
+	else:
+		hpivm='False'
+	return hpivm
+
+def extract_hpivmhost():
+	command= "/opt/hpvm/bin/hpvminfo -V -S | awk '/hostname/ {print $NF}'"
+        ivmhost=mycon.run(command,'s')
+	return ivmhost
+
 def extract_wwid(diskraw):
-	comando = "scsimgr get_attr  -a wwid -p -D " + diskraw
-	stdin, stdout, stderr = ssh.exec_command(comando)
-        wwid = stdout.readline()
+	command = "scsimgr get_attr  -a wwid -p -D " + diskraw
+	wwid = mycon.run(command,'s')
 	return wwid
 
-for host in hosts:
-	#remove \n for ssh connection
-	host=host.rstrip('\n')
-	#print '\n' +host
-	vgsdatadict[host]={'vgs':{}}
-
-	ssh = paramiko.SSHClient()
-	ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-	ssh.connect( host, key_filename=keypriv, timeout=10)
-	stdin, stdout, stderr = ssh.exec_command("vgdisplay -v -F | grep -v 'vg_status=deactivated'")
-	vgdata = stdout.readlines()
+def extract_vgdata():
+	vgdata = mycon.run("vgdisplay -v -F | grep -v 'vg_status=deactivated'")
 	for line in vgdata:
 		linedict=dict(item.split('=') for item in line.split(':'))
+		print linedict
 		if 'vg_name' in linedict:
 			vg_name=linedict['vg_name']
 			vgsdatadict[host]['vgs'][vg_name]={'lvs':{},'pvs':{}}
@@ -79,17 +86,47 @@ for host in hosts:
 			del linedict['pv_name']
 			vgsdatadict[host]['vgs'][vg_name]['pvs'][pv_name].update(linedict)
 
-	#Obtener modelo e introducirlo en el dict una vez procesadas las entradas de vgdisplay
+def extract_pvmodel():
+	#Extract for a given host, for each vg, all pv disk models
 	for N in vgsdatadict[host]['vgs'].keys():
 		for disk in vgsdatadict[host]['vgs'][N]['pvs'].keys():
 			diskraw = convert_to_raw(disk)
-			comando="diskinfo " + diskraw + "| grep 'product id:' | awk -F: '{print $NF}'"
-		        stdin, stdout, stderr = ssh.exec_command(comando)
-       			diskmodel = stdout.readline()
+			diskmodel=mycon.run("diskinfo " + diskraw + "| grep 'product id:' | awk -F: '{print $NF}'",'s')
 			dicttemp={'model':diskmodel}
 			vgsdatadict[host]['vgs'][N]['pvs'][disk].update(dicttemp)
-        ssh.close()
+		
+			#Add wwid key-value for each disk
+			dicttemp={'wwid':extract_wwid(diskraw)}
+                        vgsdatadict[host]['vgs'][N]['pvs'][disk].update(dicttemp)
+
+# ----------------------- MAIN ------------------------------
+for host in hosts:
+	#All functions that need connect to a server will use the variable 'host' to execute the commands on remote system
+	#remove \n for ssh connection
+	host=host.rstrip('\n')
+	vgsdatadict[host]={}
+	vgsdatadict[host]['vgs']={}
+	mycon = Con_manager()
+	mycon.open_con(host)
+	hpivmtype = is_hpivm()
+	if hpivmtype == 'host':
+		vgsdatadict[host]['hpivm']='host'
+	elif hpivmtype == 'guest':
+		hpivmhost = extract_hpivmhost()
+		vgsdatadict[host]['hpivm']='guest'
+		vgsdatadict[host]['hpivmhost']=hpivmhost
+	else:
+		#Is string False because is not boolean (guest,host or False)
+		vgsdatadict[host]['hpivm']='False'
+
+
+	extract_vgdata()
+
+
+	#Obtener modelo e introducirlo en el dict una vez procesadas las entradas de vgdisplay
+	extract_pvmodel()
 
 	#Mostrar diferentes resultados por pantalla
-	showvginfo(host)
-#pprint(vgsdatadict)
+	#showvginfo(host)
+	mycon.close()
+pprint(vgsdatadict)
