@@ -5,6 +5,7 @@ import re
 import string
 from tabulate import tabulate
 from pprint import pprint
+import copy
 
 keypriv ='id_rsa'
 #hosts = open('hostlist.cfg','r').readlines()
@@ -106,10 +107,13 @@ def extract_pvmodel():
                         vgsdatadict[host]['vgs'][N]['pvs'][disk].update(dicttemp)
 
 def extract_ivmhostinfo(host):
+	print "extract hpivm info en: " + host
 	guests = mycon.run("/opt/hpvm/bin/hpvmstatus -M | awk -F : '{print$1}'")
-	disks = mycon.run("/opt/hpvm/bin/hpvmdevinfo -M | awk -F : '/disk/{print $2,$8,$9}'")
 	for guest in guests:
+		guest = guest.rstrip('\n')
 		hpivmhosts[host][guest]=[]
+		comando = "/opt/hpvm/bin/hpvmdevinfo -M -P " + guest + " | awk -F : '/disk/{print $2,$8,$9}'"
+		disks = mycon.run(comando)
 		for linedisk in disks:
 			linedisk = linedisk.split(' ')
 			diskhost = linedisk[1]
@@ -122,12 +126,19 @@ def extract_ivmhostinfo(host):
 	
 def show_hpivminfo(host):
 	table = []
-	headersivm = ['Host','Guest','Virt disk','Phy Disk','WWID','Size Gb']
+	table_resume = []
+	headersivm = ['Host','Guest','Virt disk','Phy Disk','WWID','Size Gb','Model']
+	headersivm_resume = ['Host','Guest','Total Size Gb']
 	for guest in hpivmhosts[host]:
+		sizetotal = 0
 		for disk in hpivmhosts[host][guest]:
-			line = [host,guest, disk['gdisk'], disk['hdisk'], disk['wwid'], int((disk['size'])/1024)/1024]
+			line = [host,guest, disk['gdisk'], disk['hdisk'], disk['wwid'], (int(disk['size'])/1024)/1024, disk['model']]
 			table.append(line)
+			sizetotal = (sizetotal + (int(disk['size'])/1024)/1024)
+		line_resume = [host,guest,sizetotal]
+		table_resume.append(line_resume)
 	print tabulate(table,headersivm,tablefmt="psql")
+	print tabulate(table_resume,headersivm_resume,tablefmt="psql")
 		
 
 # ----------------------- MAIN ------------------------------
