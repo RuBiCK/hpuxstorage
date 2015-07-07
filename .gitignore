@@ -1,4 +1,8 @@
+.gitignore
 id_rsa
 hostlist.cfg
+extractinfo.py.ori
+hostlist.cfg.ori
 *.pyc
-salida.txt
+*.txt
+*.csv

@@ -1,16 +1,23 @@
 #/usr/bin/python
 # coding=utf-8
 from sshmanager import *
+import csv
 import re
 import string
+import sys
+import os
+import inspect
 from tabulate import tabulate
 from pprint import pprint
-import copy
 
 keypriv ='id_rsa'
-#hosts = open('hostlist.cfg','r').readlines()
-hosts = ['vh055']
-vgsdatadict={}
+exportpath='/tmp/'
+hosts = open('hostlist.cfg','r').readlines()
+#hosts = ['sv950','vh056','sv144']
+
+write_vginfo_header = 0
+write_hpimvinfo = 0
+#--------------- Functions -----------------
 
 def showvginfo(host):
 	modellist=[]
@@ -33,8 +40,20 @@ def showvginfo(host):
 		outputlist.append(listline)
 		modellist=[]
 		modelos.clear()
-	print tabulate(outputlist,headers,tablefmt="psql")
-	print '\n'
+
+        if output == 'csv':
+		print "dentro csv vginfo"
+		global write_vginfo_header
+		if write_vginfo_header == 0:
+	                write_csv(headers, exportpath + "showvginfo.csv")
+			write_vginfo_header = 1
+
+                write_csv(outputlist, exportpath + "showvginfo.csv")
+
+        else:
+		print "else sin csv showvginfo"
+        	print tabulate(outputlist,headers,tablefmt="psql")
+        	print '\n'
 
 def extractvgsize(host):
 	 for N in vgsdatadict[host]['vgs'].keys():
@@ -65,7 +84,8 @@ def extract_wwid(diskraw):
 	wwid = mycon.run(command,'s')
 	return wwid
 
-def extract_vgdata():
+def extract_vgdata(host):
+	#host parameter not used
 	vgdata = mycon.run("vgdisplay -v -F | grep -v 'vg_status=deactivated'")
 	for line in vgdata:
 		linedict=dict(item.split('=') for item in line.split(':'))
@@ -107,25 +127,27 @@ def extract_pvmodel():
                         vgsdatadict[host]['vgs'][N]['pvs'][disk].update(dicttemp)
 
 def extract_ivmhostinfo(host):
-	print "extract hpivm info en: " + host
 	guests = mycon.run("/opt/hpvm/bin/hpvmstatus -M | awk -F : '{print$1}'")
 	for guest in guests:
 		guest = guest.rstrip('\n')
 		hpivmhosts[host][guest]=[]
-		comando = "/opt/hpvm/bin/hpvmdevinfo -M -P " + guest + " | awk -F : '/disk/{print $2,$8,$9}'"
+		#Get all disks for given guest
+		comando = "/opt/hpvm/bin/hpvmdevinfo -M -P " + guest + " | grep -v 'lv' | awk -F : '/disk/{print $2,$8,$9}'"
 		disks = mycon.run(comando)
 		for linedisk in disks:
 			linedisk = linedisk.split(' ')
-			diskhost = linedisk[1]
-			diskguest = linedisk[2]
-			diskwwid = extract_wwid(diskhost)
-			disksize = extract_disksize(host,diskhost)
-			diskmodel = extract_diskmodel(host,diskhost)
-			dtmp = {'hdisk':diskhost,'gdisk':diskguest,'size':disksize,'model':diskmodel,'wwid':diskwwid}
-			hpivmhosts[host][guest].append(dtmp)
-	
+			diskhost = linedisk[1].rstrip('\n')
+			comando = "ls -la " + diskhost + " >/dev/null 2>&1; echo $?"
+			existe =  mycon.run(comando,'s')
+			if int(existe) == 0:
+				diskguest = linedisk[2].rstrip('\n')
+				diskwwid = extract_wwid(diskhost)
+				disksize = extract_disksize(host,diskhost)
+				diskmodel = extract_diskmodel(host,diskhost)
+				dtmp = {'hdisk':diskhost,'gdisk':diskguest,'size':disksize,'model':diskmodel,'wwid':diskwwid}
+				hpivmhosts[host][guest].append(dtmp)
 def show_hpivminfo(host):
-	table = []
+        table = []
 	table_resume = []
 	headersivm = ['Host','Guest','Virt disk','Phy Disk','WWID','Size Gb','Model']
 	headersivm_resume = ['Host','Guest','Total Size Gb']
@@ -137,12 +159,42 @@ def show_hpivminfo(host):
 			sizetotal = (sizetotal + (int(disk['size'])/1024)/1024)
 		line_resume = [host,guest,sizetotal]
 		table_resume.append(line_resume)
-	print tabulate(table,headersivm,tablefmt="psql")
-	print tabulate(table_resume,headersivm_resume,tablefmt="psql")
+
+	if output == 'csv':
+		global write_hpimvinfo
+                if write_hpimvinfo == 0:
+			write_csv(headersivm, exportpath + "hpivminfo.csv")
+                        write_csv(headersivm_resume, exportpath + "hpivminfo_resume.csv")
+			write_hpimvinfo = 1
+
+
+		write_csv(table, exportpath + "hpivminfo.csv")
+		write_csv(table_resume, exportpath + "hpivminfo_resume.csv")
+
 		
+
+	else:
+		print tabulate(table,headersivm,tablefmt="psql")
+		print tabulate(table_resume,headersivm_resume,tablefmt="psql")
+		
+def write_csv(dataexport,outfile):
+                with open(outfile, "wb") as f:
+	                writer = csv.writer(f,delimiter=';')
+                        writer.writerows(dataexport)
+
 
 # ----------------------- MAIN ------------------------------
 hpivmhosts={}
+vgsdatadict={}
+write_vginfo_header = 0
+
+#TODO implement getopts for more robust parameters input
+if len(sys.argv)== 2 and sys.argv[1]=='csv':
+	output = 'csv'
+	if not os.path.exists(exportpath):
+    		os.makedirs(exportpath)
+else:
+	output = 'table'
 
 for host in hosts:
 	#All functions that need connect to a server will use the variable 'host' to execute the commands on remote system
@@ -152,25 +204,24 @@ for host in hosts:
 	vgsdatadict[host]['vgs']={}
 	mycon = Con_manager()
 	mycon.open_con(host)
+
 	if is_hpivm() == 'host':
 		vgsdatadict[host]['hpivm']='host'
 		hpivmhosts[host]={}
 		extract_ivmhostinfo(host)
 		show_hpivminfo(host)
-	'''	
 	elif is_hpivm() == 'guest':
 		hpivmhost = extract_hpivmhost()
 		vgsdatadict[host]['hpivm']='guest'
-		vgsdatadict[host]['hpivmhost']=hpivmhost
+		vgsdatadict[host]['hpivmhost']=host
 	else:
 		#Is string False because is not boolean (guest,host or False)
 		vgsdatadict[host]['hpivm']='False'
-	'''
-	###extract_vgdata()
+
+	extract_vgdata(host)
 
 	#Obtener modelo e introducirlo en el dict una vez procesadas las entradas de vgdisplay
-	###extract_pvmodel()
+	extract_pvmodel()
 
-	#Mostrar diferentes resultados por pantalla
 	mycon.close()
-	#showvginfo(host)
+	showvginfo(host)
